@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mynotepad</class>
+ <widget class="QMainWindow" name="Mynotepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cute记事本</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:18pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsave_as"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionPaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionFont"/>
+    <addaction name="actionBold"/>
+    <addaction name="actionUnderline"/>
+    <addaction name="actionItalic"/>
+    <addaction name="actionsettingBackGround"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionnew_2"/>
+   <addaction name="actionopen_2"/>
+   <addaction name="actionsave_2"/>
+   <addaction name="actionsave_as_2"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy_2"/>
+   <addaction name="actionCut_2"/>
+   <addaction name="actionPaste_2"/>
+   <addaction name="actionUndo_2"/>
+   <addaction name="actionRedo_2"/>
+   <addaction name="separator"/>
+   <addaction name="actionBold_2"/>
+   <addaction name="actionItalic_2"/>
+   <addaction name="actionUnderline_2"/>
+   <addaction name="separator"/>
+   <addaction name="actiongreen_eye"/>
+  </widget>
+  <action name="actionnew">
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>上一步</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>下一步</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>字体</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+F</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionItalic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>斜体</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionUnderline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>下划线</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionnew_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/new.png</normaloff>:/notepad_rec/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionopen_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/open.png</normaloff>:/notepad_rec/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionsave_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/save.png</normaloff>:/notepad_rec/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionsave_as_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/save_as.png</normaloff>:/notepad_rec/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actionCopy_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/copy.png</normaloff>:/notepad_rec/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="actionCut_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/cut.png</normaloff>:/notepad_rec/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actionPaste_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/paste.png</normaloff>:/notepad_rec/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="actionUndo_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/undo.png</normaloff>:/notepad_rec/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>上一步</string>
+   </property>
+  </action>
+  <action name="actionRedo_2">
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/redo.png</normaloff>:/notepad_rec/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>下一步</string>
+   </property>
+  </action>
+  <action name="actionBold_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/bold.png</normaloff>
+     <normalon>:/notepad_rec/bold_checked.png</normalon>:/notepad_rec/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+  </action>
+  <action name="actionItalic_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/itatic.png</normaloff>
+     <normalon>:/notepad_rec/itatic_checkd.png</normalon>:/notepad_rec/itatic.png</iconset>
+   </property>
+   <property name="text">
+    <string>斜体</string>
+   </property>
+  </action>
+  <action name="actionUnderline_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/underline.png</normaloff>
+     <normalon>:/notepad_rec/underline_checked.png</normalon>:/notepad_rec/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>下划线</string>
+   </property>
+  </action>
+  <action name="actiongreen_eye">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="notepad_rec.qrc">
+     <normaloff>:/notepad_rec/green_eye.png</normaloff>
+     <normalon>:/notepad_rec/green_eye_open.png</normalon>:/notepad_rec/green_eye.png</iconset>
+   </property>
+   <property name="text">
+    <string>护眼模式</string>
+   </property>
+  </action>
+  <action name="actionsettingBackGround">
+   <property name="text">
+    <string>设置背景图片</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="notepad_rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>notepad_rec/bold.png</file>
+        <file>notepad_rec/bold_checked.png</file>
+        <file>notepad_rec/copy.png</file>
+        <file>notepad_rec/cut.png</file>
+        <file>notepad_rec/font.png</file>
+        <file>notepad_rec/itatic.png</file>
+        <file>notepad_rec/itatic_checkd.png</file>
+        <file>notepad_rec/new.png</file>
+        <file>notepad_rec/open.png</file>
+        <file>notepad_rec/paste.png</file>
+        <file>notepad_rec/redo.png</file>
+        <file>notepad_rec/save.png</file>
+        <file>notepad_rec/save_as.png</file>
+        <file>notepad_rec/underline.png</file>
+        <file>notepad_rec/underline_checked.png</file>
+        <file>notepad_rec/undo.png</file>
+        <file>notepad_rec/green_eye.png</file>
+        <file>notepad_rec/green_eye_open.png</file>
+        <file>notepad_rec/bkg.jpg</file>
+    </qresource>
+</RCC>
